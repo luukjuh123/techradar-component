@@ -1,4 +1,7 @@
 node_modules
 dist
+storybook-static
+.storybook
+stories
 basic.stories.js
 color.stories.js
