@@ -1,7 +1,7 @@
 {
   "name": "techradar-component",
   "description": "A React Techradar component inspired by the ThoughtWorks Technology Radar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Luuk Bevelsborg (luukjuh123)",
   "license": "MIT",
   "repository": {
