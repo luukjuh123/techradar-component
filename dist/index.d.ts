@@ -1,1 +1,1 @@
-import './index.css';
+export { default as TechRadar } from './components/TechRadar';

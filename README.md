@@ -18,21 +18,35 @@ To use, import the `TechRadar` component from `techradar-component` and provide 
 ```
 import { TechRadar } from 'techradar-component';
 
-const quadrants = ['Languages', 'Frameworks', 'Databases', 'Tools'];
-const rings = ['Adopt', 'Trial', 'Assess', 'Hold'];
-const data = [
-  { id: 1, name: 'TypeScript', quadrant: 'Languages', ring: 'Adopt' },
-  { id: 2, name: 'React', quadrant: 'Frameworks', ring: 'Adopt' },
-  // ...
-];
+const setup = {
+    rings: ['adopt', 'trial', 'assess', 'hold'],
+    quadrants: ['tools', 'techniques', 'platforms', 'languages'],
+    data: [
+      {
+        id: 1,
+        name: 'D3',
+        quadrant: 'tools',
+        ring: 'assess',
+      },
+      {
+        id: 2,
+        name: 'TypeScript',
+        quadrant: 'languages',
+        ring: 'trial',
+      },
+      {
+        id: 3,
+        name: 'Storybook',
+        quadrant: 'tools',
+        ring: 'adopt',
+      },
+    ],
+  }
 
 const MyComponent = () => {
   return (
     <TechRadar
-      width={800}
-      quadrants={quadrants}
-      rings={rings}
-      data={data}
+      {...setup}
     />
   );
 };
