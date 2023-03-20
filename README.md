@@ -7,16 +7,16 @@ This is a TypeScript React component for displaying a tech radar, with customiza
 To install, run:
 
 ```
-npm install techradar-react
+npm install techradar-component
 
 ```
 
 ## Usage
 
-To use, import the `TechRadar` component from `techradar-react` and provide the necessary props:
+To use, import the `TechRadar` component from `techradar-component` and provide the necessary props:
 
 ```
-import { TechRadar } from 'techradar-react';
+import { TechRadar } from 'techradar-component';
 
 const quadrants = ['Languages', 'Frameworks', 'Databases', 'Tools'];
 const rings = ['Adopt', 'Trial', 'Assess', 'Hold'];
