@@ -32,19 +32,19 @@ import { TechRadar } from 'techradar-component';
 
 
 type RadarProps = {
-  quadrants: string[]
-  rings?: string[]
+  quadrants: string[];
+  rings?: string[];
   data?: {
-    id: number
-    name: string
-    quadrant: string
-    ring: string
+    id: number;
+    name: string;
+    quadrant: string;
+    ring: string;
   }[]
-  width?: number
-  fontSize?: number
-  itemFontSize?: number
-  colorScaleIndex?: number
-  radiusDiminish?: number
+  width?: number;
+  fontSize?: number;
+  itemFontSize?: number;
+  colorScaleIndex?: number;
+  radiusDiminish?: number;
 }
 
 const setup: RadarProps  = {
