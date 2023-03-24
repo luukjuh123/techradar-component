@@ -2,23 +2,52 @@
 
 This is a TypeScript React component for displaying a tech radar, with customizable quadrants, rings, and items.
 
+
+## contribution
+
+To contribute to techradar-component, report issues on GitHub with details and steps to reproduce. For pull requests, follow coding guidelines, describe your changes, and ensure tests pass. Your participation helps improve the project for the community.
+
 ## Installation
 
 To install, run:
 
-```
+```bash
 npm install techradar-component
 
 ```
+or:
+```bash
+yarn add techradar-component
+
+```
+
 
 ## Usage
 
 To use, import the `TechRadar` component from `techradar-component` and provide the necessary props:
 
-```
+```javascript
+import React from 'react';
 import { TechRadar } from 'techradar-component';
 
-const setup = {
+
+type RadarProps = {
+  quadrants: string[]
+  rings?: string[]
+  data?: {
+    id: number
+    name: string
+    quadrant: string
+    ring: string
+  }[]
+  width?: number
+  fontSize?: number
+  itemFontSize?: number
+  colorScaleIndex?: number
+  radiusDiminish?: number
+}
+
+const setup: RadarProps  = {
     rings: ['adopt', 'trial', 'assess', 'hold'],
     quadrants: ['tools', 'techniques', 'platforms', 'languages'],
     data: [
@@ -57,13 +86,15 @@ const MyComponent = () => {
 
 | Prop | Type | Required | Default value | Description |
 | --- | --- | --- | --- | --- |
-| width | number | Yes | - | The width of the TechRadar component |
-| data | DataType[] | Yes | - | An array of objects with the following properties: id, name, quadrant, ring |
-| rings | string[] | Yes | - | An array of strings representing the rings of the radar chart |
 | quadrants | string[] | Yes | - | An array of strings representing the quadrants of the radar chart |
-| radius | number | No | 200 | The radius of the radar chart |
-| startingQuadrant | 'q1' | 'q2' | 'q3' | 'q4' | No | 'q1' | The quadrant where the radar chart starts |
-| onDataPointClick | (dataPoint: DataType) => void | No | - | A function that will be called when a data point is clicked |
+| rings | string[] | No | - | An array of strings representing the rings of the radar chart |
+| data | DataType[] | No | - | An array of objects with the following properties: id, name, quadrant, ring |
+| width | number | No | 700px | The width of the TechRadar component |
+| fontSize | number | No | 12px | The radius of the radar chart |
+| itemFontSize | number | No | 12px | Item size differentiation than quadrant titles |
+| colorScaleIndex | number | No | 200 | The item fontSize |
+| radiusDiminish | number | No | 2 | The factor in which the rings are equal |
+
 
 ## License
 
