@@ -3,7 +3,7 @@
 This is a TypeScript React component for displaying a tech radar, with customizable quadrants, rings, and items.
 
 
-## contribution
+## Contribution
 
 To contribute to techradar-component, report issues on GitHub with details and steps to reproduce. For pull requests, follow coding guidelines, describe your changes, and ensure tests pass. Your participation helps improve the project for the community.
 
