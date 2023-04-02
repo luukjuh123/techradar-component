@@ -1,6 +1,6 @@
 # Techradar
 
-![npm](https://img.shields.io/npm/v/techradar-component) ![npm](https://img.shields.io/npm/dm/techradar-component?logo=npm) ![GitHub](https://img.shields.io/github/license/luukjuh123/techradar-component) ![GitHub issues](https://img.shields.io/github/issues/luukjuh123/techradar-component) ![GitHub Repo stars](https://img.shields.io/github/stars/luukjuh123/techradar-component?style=social)
+![npm](https://img.shields.io/npm/v/techradar-component) ![GitHub top language](https://img.shields.io/github/languages/top/luukjuh123/techradar-component) ![npm](https://img.shields.io/npm/dm/techradar-component?logo=npm) ![GitHub](https://img.shields.io/github/license/luukjuh123/techradar-component) ![GitHub issues](https://img.shields.io/github/issues/luukjuh123/techradar-component) ![GitHub last commit](https://img.shields.io/github/last-commit/luukjuh123/techradar-component) ![GitHub Repo stars](https://img.shields.io/github/stars/luukjuh123/techradar-component?style=social)
 
 This is a TypeScript React component for displaying a tech radar, with customizable quadrants, rings, and items.
 
