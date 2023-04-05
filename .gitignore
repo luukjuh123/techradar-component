@@ -11,8 +11,6 @@ node_modules
 # production
 dist
 storybook-static
-/dist
-/storybook-static
 
 # misc
 .DS_Store
