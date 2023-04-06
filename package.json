@@ -29,7 +29,7 @@
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^13.2.1",
     "@types/jest": "^29.5.0",
-    "@types/node": "^16.7.13",
+    "@types/node": "^18.15.11",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "d3-color": "^3.1.0",
