@@ -84,6 +84,11 @@ const MyComponent = () => {
 
 ```
 
+## Storybook
+
+To see the storybook run: `yarn storybook`. To build the static storybook run `yarn build-storybook`.
+
+
 ## Props
 
 | Prop | Type | Required | Default value | Description |
