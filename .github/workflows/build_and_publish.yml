@@ -1,0 +1,33 @@
+name: Build and Publish to npm
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_and_publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: "19.x"
+
+    - name: Install dependencies
+      run: yarn install
+
+    - name: Run build
+      run: yarn run build
+
+    - name: Run semantic-release
+      uses: cycjimmy/semantic-release-action@v2
+      with:
+        extra_plugins: '@semantic-release/git,@semantic-release/changelog'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
