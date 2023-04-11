@@ -1,9 +1,12 @@
-// import * as React from 'react'
 import { createContext } from 'react'
 import { scaleOrdinal } from 'd3-scale'
 import * as d3Scales from 'd3-scale-chromatic'
 
-export const colorScales = [
+interface ColorScaleEntry {
+  name: string
+}
+
+export const colorScales: ColorScaleEntry[] = [
   { name: 'schemeCategory10' },
   { name: 'schemeAccent' },
   { name: 'schemeDark2' },
@@ -14,15 +17,13 @@ export const colorScales = [
 ]
 
 export interface ThemeContextType {
-  colorScale: (index: number) => string //
+  colorScale: (index: number) => string
   fontSize: number
   fontFamily: string
   itemFontSize: number
   quadrantsConfig: Record<string, any>
 }
 
-//set color scheme by index
-//chose from 0 to 6
 const DEFAULT_COLOR_SCHEME_INDEX = 5
 const DEFAULT_FONT_SIZE = 12
 const DEFAULT_COLOR_SCALE = getColorScale(5)
@@ -34,7 +35,7 @@ export function getColorScale(colorScaleIndex: number) {
     return DEFAULT_COLOR_SCHEME_INDEX
   }
 
-  return scaleOrdinal(d3Scales[colorScales[colorScaleIndex].name])
+  return scaleOrdinal(d3Scales.colorScales[colorScaleIndex].name)
 }
 
 export const ThemeContext = createContext<ThemeContextType>({
