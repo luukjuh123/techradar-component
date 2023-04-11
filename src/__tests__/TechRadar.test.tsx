@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import TechRadar from '../src/components/TechRadar'
+import TechRadar from '../components/TechRadar'
 
 describe('TechRadar', () => {
   const setup = {
